@@ -3,7 +3,6 @@ name: Build and Release
 on: 
   push:
     branches:
-      - master
       - main
 
 jobs:
@@ -54,7 +53,7 @@ jobs:
         path: "${{env.RELEASE_NAME}}"
 
     - name: Release
-      uses: sondreb/action-release@master
+      uses: sondreb/action-release@main
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         files: "${{env.RELEASE_NAME}}"
