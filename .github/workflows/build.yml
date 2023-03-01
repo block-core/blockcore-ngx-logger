@@ -54,7 +54,7 @@ jobs:
         path: "${{env.RELEASE_NAME}}"
 
     - name: Release
-      uses: sondreb/action-release@main
+      uses: sondreb/action-release@master
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         files: "${{env.RELEASE_NAME}}"
