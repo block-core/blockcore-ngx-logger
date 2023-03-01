@@ -570,7 +570,6 @@
       }
     }
   },
-  "defaultProject": "ngx-logger",
   "cli": {
     "analytics": false
   }
