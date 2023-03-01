@@ -45,6 +45,7 @@ jobs:
 
     - name: Package
       run: |
+        cd dist/ngx-logger
         npm pack
 
     - uses: actions/upload-artifact@v1

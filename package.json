@@ -23,7 +23,6 @@
     "name": "David Fannin",
     "email": "dbfannin.npm@gmail.com"
   },
-  "files": ["dist"],
   "contributors": [
     "sondreb",
     "martin-reiterer",
