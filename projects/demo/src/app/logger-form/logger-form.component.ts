@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { Validators, FormBuilder, FormGroup } from '@angular/forms';
+import { Validators, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { NGXLogger, NgxLoggerLevel } from '../../../../../src/public_api';
 import { BusinessService } from '../business-service/business.service';
 
@@ -38,7 +38,7 @@ export class LoggerFormComponent implements OnInit {
   ];
 
   constructor(
-    private fb: FormBuilder,
+    private fb: UntypedFormBuilder,
     private logger: NGXLogger,
     private businessService: BusinessService,
   ) {
@@ -55,7 +55,7 @@ export class LoggerFormComponent implements OnInit {
   }
 
   logComplex() {
-    const complexStructure = new FormGroup({ sub: new FormGroup({}) });
+    const complexStructure = new UntypedFormGroup({ sub: new UntypedFormGroup({}) });
     this.logger.error('Test complex', complexStructure);
     this.logger.error(complexStructure);
   }
