@@ -1,24 +1,19 @@
-[![npm version](https://badge.fury.io/js/ngx-logger.svg)](https://www.npmjs.com/package/ngx-logger)
+# Blockcore Angular Logger
 
-# NGX Logger
+NGX Logger is a simple logging module for Angular 15
 
-NGX Logger is a simple logging module for angular (currently supports angular 6+. *Warning : you might need older version of the lib to use older versions of angular*).
 It allows "pretty print" to the console, as well as allowing log messages to be POSTed to a URL for server-side logging.
-
-## Join the NGX Logger discord server!
-
-[Join our discord server!](https://discord.gg/zzkz9ny) Get updated on the latest changes and newest feature! Get help faster from the community! Share implementation strategies! Make friends :)
 
 ## Installation
 
 ```shell
-npm install --save ngx-logger
+npm install @blockcore/ngx-logger
 ```
 
 Once installed you need to import our main module (optionally you will need to import HttpClientModule):
 
 ```typescript
-import { LoggerModule, NgxLoggerLevel } from "ngx-logger";
+import { LoggerModule, NgxLoggerLevel } from "@blockcore/ngx-logger";
 // HttpClientModule is only needed if you want to log on server or if you want to inspect sourcemaps
 import { HttpClientModule } from "@angular/common/http";
 ```
@@ -51,7 +46,7 @@ To use the Logger, you will need to import it locally, then call one of the logg
 
 ```typescript
 import { Component } from "@angular/core";
-import { NGXLogger } from "ngx-logger";
+import { NGXLogger } from "@blockcore/ngx-logger";
 
 @Component({
   selector: "your-component",
@@ -65,7 +60,8 @@ export class YourComponent {
   }
 }
 ```
-*For most browsers, you need to enable "verbose" or "debug" mode in the developper tools to see debug logs*
+
+_For most browsers, you need to enable "verbose" or "debug" mode in the developper tools to see debug logs_
 
 ## Configuration
 
@@ -86,7 +82,7 @@ You can see more of the features supported by NGXLogger in this [doc](docs/featu
 
 ## Demo App
 
-There is [a demo application](https://github.com/dbfannin/ngx-logger/tree/master/projects/demo/src) with examples of how to use ngx-logger. To run it perform the following:
+There is [a demo application](https://github.com/block-core/blockcore-ngx-logger/tree/master/projects/demo/src) with examples of how to use ngx-logger. To run it perform the following:
 
 - Clone the repo
 - Run `npm ci` or `npm install`
