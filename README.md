@@ -121,3 +121,9 @@ All services have mocked classes that can be used for testing located [here](tes
 All are welcome to contribute to NGX Logger.
 
 See the [doc](docs/contributing.md) to know how
+
+## Fork
+
+This library is a fork of existing library, upgraded with less backwards compatibility but built to support the latest Angular version.
+
+Original source: [https://github.com/dbfannin/ngx-logger](https://github.com/dbfannin/ngx-logger)
