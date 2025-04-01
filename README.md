@@ -1,6 +1,6 @@
 # Blockcore Angular Logger
 
-NGX Logger is a simple logging module for Angular 15
+NGX Logger is a simple logging module for Angular 19
 
 It allows "pretty print" to the console, as well as allowing log messages to be POSTed to a URL for server-side logging.
 
