@@ -48,7 +48,7 @@ jobs:
         cd dist/ngx-logger
         npm pack
 
-    - uses: actions/upload-artifact@v1
+    - uses: actions/upload-artifact@v4
       with:
         name: ${{env.PROJECT_NAME}}-preview-${{env.VERSION}}
         path: "dist/ngx-logger/${{env.RELEASE_NAME}}"
